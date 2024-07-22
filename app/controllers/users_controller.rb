@@ -11,7 +11,4 @@ class UsersController < ApplicationController
       end
     end
 
-    def authorize_user
-      authorize @user
-    end
 end
