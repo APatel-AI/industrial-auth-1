@@ -10,7 +10,6 @@ class PhotosController < ApplicationController
   end
 
   def authorize_photo
-    @photo = Photo.new
     authorize @photo
   end
 
@@ -20,8 +19,9 @@ class PhotosController < ApplicationController
 
   # GET /photos/new
   def new
-    authorize @photo
+
     @photo = Photo.new
+    authorize @photo
   end
 
   # GET /photos/1/edit
